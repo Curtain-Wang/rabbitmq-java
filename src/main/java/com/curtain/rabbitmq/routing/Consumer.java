@@ -68,8 +68,8 @@ public class Consumer {
 
 
     public static void main(String[] args) {
-        new Thread("queue1").start();
-        new Thread("queue2").start();
-        new Thread("queue3").start();
+        new Thread(runnable,"queue1").start();
+        new Thread(runnable,"queue2").start();
+        new Thread(runnable,"queue3").start();
     }
 }
